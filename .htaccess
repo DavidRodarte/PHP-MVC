@@ -2,5 +2,5 @@
 Options All -Indexes
   #Activar reescritura
 RewriteEngine On
-  #Reescribir la variable página para lograr URL's más amigables
+  #Reescribir la variable GET página para lograr URL's más amigables
 RewriteRule ^(.*)$ index.php?pagina=$1 [QSA,L]
