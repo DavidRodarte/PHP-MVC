@@ -14,6 +14,5 @@ Controladores: Sirven para dar funcionalidad a las vistas y comunicarlas con los
 */
 require_once 'controladores/controladorPagina.php';
 require_once 'modelos/modeloPagina.php';
-/* Se instancía el controlador y se llama a su función cargar() para incluir la página principal*/
-$pagina = new ControladorPagina();
-$pagina -> cargar();
+/* Se llama a su función cargar() para incluir la página principal*/
+ControladorPagina::cargar();
