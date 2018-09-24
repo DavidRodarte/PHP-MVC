@@ -5,11 +5,11 @@
 */
 class ControladorPagina{
 
-  public function cargar(){
+  public static function cargar(){
     include 'vistas/pagina.php';
   }
 
-  public function enlaceControlador(){
+  public static function enlaceControlador(){
     #Si la variable $_GET['pagina'] está definida, entonces $enlace toma su valor, si no, tomará el valor por defecto
     if( isset($_GET['pagina']) ) {
       $enlace=$_GET['pagina'];
