@@ -15,8 +15,7 @@ Incluirá componentes y contenido que se encuentra dentro del directorio vistas/
   <body>
     <?php
       /* Aquí se cargarán contenidos o componentes según el valor de $_GET['pagina'] (previamente validadas por el controlador y modelo) */
-      $enlace = new ControladorPagina();
-      $enlace -> enlaceControlador();
+      ControladorPagina::enlaceControlador();
     ?>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
