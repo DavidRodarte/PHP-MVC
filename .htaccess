@@ -3,4 +3,6 @@ Options All -Indexes
   #Activar reescritura
 RewriteEngine On
   #Reescribir la variable GET página para lograr URL's más amigables
-RewriteRule ^([a-zA-Z0-9,-]+)/?$ index.php?id=$1 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ index.php?pagina=$1 [L]
